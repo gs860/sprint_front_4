@@ -55,7 +55,7 @@ st.markdown(
     </style>
     """, unsafe_allow_html=True
 )
-df = pd.read_csv("C:/Users/gabriel/Documents/cs_de_front/WA_Fn-UseC_-HR-Employee-Attrition.csv")
+df = pd.read_csv('./WA_Fn-UseC_-HR-Employee-Attrition.csv')
 df.isnull().sum()
 # Transformar colunas categóricas em numéricas
 df['Attrition'] = df['Attrition'].map({'Yes': 1, 'No': 0})
